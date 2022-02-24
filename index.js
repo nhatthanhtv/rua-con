@@ -17,7 +17,7 @@ btnSeach.onclick = () =>{
     let value = input.value.trim()
 
     const lengthValue = value.length
-    const keyStart = content.innerText.indexOf(value)
+    const keyStart = content.innerText.toLowerCase().indexOf(value)
 
     if(keyStart === - 1){
         warning.innerText = 'Không tìm thấy nội dung'
